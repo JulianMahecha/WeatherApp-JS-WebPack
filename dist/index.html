@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- BootsWatch CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/materia/bootstrap.min.css" rel="stylesheet" integrity="sha384-SYbiks6VdZNAKT8DNoXQZwXAiuUo5/quw6nMKtFlGO/4WwxW86BSTMtgdzzB9JJl" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto text-center">
+                <!-- Show Information -->
+                <div class="card">
+                    <div class="card-body">
+                        <h1 id="weather-location" class="h3"></h1>
+                        <h3 id="weather-description" class="h4"></h3>
+                        <h3 id="weagther-string"></h3>
+                        <ul class="list-group mt-3">
+                            <li id="weather-humidity" class="list-group-item"></li>
+                            <li id="weather-wind" class="list-group-item"></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Form -->
+                <div class="card">
+                    <div class="card-body">
+                        <form id="w-form">
+                            <div class="formgroup">
+                                <input type="text" name="city" id="city" placeholder="City" class="form-control"
+                                    autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" id="country-code" class="form-control"
+                                    placeholder="Country Code" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <button type="button" id="w-change-btn" class="btn btn-primary btn-block">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
