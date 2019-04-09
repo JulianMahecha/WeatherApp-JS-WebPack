@@ -1,7 +1,11 @@
 require('./index.css');
+const {Weather} = require ('./weather');
+const weather = new Weather('Bogota', 'co');
 
-function fetchWeather(){
-    
+
+async function fetchWeather(){
+   const data = await weather.getWeather();
+   console.log(data);
 }
 
 document.addEventListener('DOMContentLoaded', fetchWeather);
