@@ -6,8 +6,9 @@ export class Weather {
     }
 
     async getWeather() {
-        const uri = `http://api.openweathermap.org/data/2.5/weather?q=${this.city},${this.countryCode}&appid=${this.keyAPI}`;
-        const data = await fetch(uri);
+        const uri = `http://api.openweathermap.org/data/2.5/weather?q=${this.city},${this.countryCode}&appid=${this.keyAPI}&units=metric`;
+        const response = await fetch(uri);
+        const data = await response.json();
         return data;
     }
 }
